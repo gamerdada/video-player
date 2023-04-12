@@ -1,0 +1,21 @@
+{
+  "name": "videojs-7-lime-skin",
+  "version": "1.0.0",
+  "description": "A lightweight Vide.js v7 skin",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "videojs": "1.0.0",
+    "videojs-contrib-quality-levels": "2.0.9",
+    "videojs-http-source-selector": "1.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "node-sass": "latest"
+  },
+  "keywords": ["videojs", "css", "skin"]
+}

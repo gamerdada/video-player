@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video.js Lime Skin</title>
+
+    <link href="skin.scss" rel="stylesheet" />
+    <style>
+      *,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .demo {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .center {
+        width: 700px;
+        height: auto;
+      }
+
+      .video-js {
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+          0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="demo">
+      <div class="center">
+        <video
+          id="player"
+          class="video-js vjs-lime"
+          controls
+          playsinline
+          preload="auto"
+        >
+          <source
+            src="https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8"
+            type="application/x-mpegURL"
+          />
+        </video>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
